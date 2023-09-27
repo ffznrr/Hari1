@@ -26,9 +26,9 @@ function submitData() {
     // <a href="mailto:${emailReceiver}?subject=${subject}&body=Halo, nama saya ${name}, ${message}. Tolong kontak saya di nomor ${number} atau email saya di ${email}"></a>
   
     let a = document.createElement('a');
-    a.href = `mailto:${emailReceiver}?subject=${subject}&body=Halo, nama saya ${name}, ${message}. tolong kontak saya di nomor${number} atau email saya di ${email}`;
+    a.href = `mailto: https://mail.google.com/mail/?view=cm&fs=1&to=${emailReceiver}&su=${subject}&body=${message};`
     a.click();
-    // https://mail.google.com/mail/?view=cm&fs=1&to=${emailReceiver}&su=${subject}&body=${message}
+
   
     let messagers = {
       nama: name,
