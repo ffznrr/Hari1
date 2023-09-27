@@ -2,34 +2,41 @@ function submitData() {
     let name = document.getElementById("input-name").value;
     let email = document.getElementById("input-email").value;
     let number = document.getElementById("input-number").value;
-    let Subject = document.getElementById("input-subject").value;
-    let text = document.getElementById("input-text").value;
-
-    if(name == ""){
-        return alert("name must be filled");
-    }else if(email == ""){
-        return alert("email must be filled");
-    }else if(number == ""){
-        return alert("number must be filled");
-    }else if(subject == ""){
-        return alert("subject must be filled");
-    }else if(text == ""){
-        return alert("text must be filled");
-    };
-
+    let subject = document.getElementById("input-subject").value;
+    let message = document.getElementById("input-message").value;
+  
+    // if (name == "" || email == "" || number == "") {
+    //   return alert("Form must be filled!");
+    // }
+  
+    if (name === "") {
+      return alert("Name must be filled!");
+    } else if (email === "") {
+      return alert("Email must be filled!");
+    } else if (number !== String) {
+      return alert("Number must be filled!");
+    } else if (subject === "") {
+      return alert("Subject must be selected!");
+    } else if (message === "") {
+      return alert("Message must be filled!");
+    }
+  
     let emailReceiver = "ffznrr@gmail.com";
-
+  
+    // <a href="mailto:${emailReceiver}?subject=${subject}&body=Halo, nama saya ${name}, ${message}. Tolong kontak saya di nomor ${number} atau email saya di ${email}"></a>
+  
     let a = document.createElement('a');
-    a.href = `mailto: ${emailReceiver}?subject=${subject}`;
-
-    let message = {
-        name: name,
-        email: email,
-        number: number,
-        subject: Subject,
-        text: text,
+    a.href = `mailto:${emailReceiver}?subject=${subject}&body=Halo, nama saya ${name}, ${message}. tolong kontak saya di nomor${number} atau email saya di ${email}`;
+    a.click();
+    // https://mail.google.com/mail/?view=cm&fs=1&to=${emailReceiver}&su=${subject}&body=${message}
+  
+    let messagers = {
+      nama: name,
+      email: email,
+      phone_number: number,
+      subject: subject,
+      message: message,
     };
-
-    let messageString = JSON.stringify(message, null, 2); // Ubah objek menjadi string JSON dengan format yang lebih baik
-    alert(messageString);
-}
+  
+    alert(messagers);
+  }
