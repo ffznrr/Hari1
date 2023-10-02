@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/project.css">
+</head>
+<body>
+    <!-- navbar -->
+<nav class="navbar">
+    <div class="logo-n-link">
+        <img src="./img/logo.png" alt="">
+        <a href="index.html"><h2>Home</h2></a>
+            <a href="my-project.html"><h2>My Project</h2></a>
+    </div>
+    <div class="btn-navbar">
+        <a href="kontak.html"><button>Contact Me</button></a>
+    </div>
+</nav>
+<!-- navbar -->
+
+<div class="container">
+    <div class="container-dalem">
+        <h2>ADD MY PROJECT</h2>
+        <form>
+        <div>
+            <label for="input-project-name">Project Name</label>
+            <input type="text" id="input-project-name">
+        </div>
+        <div class="date">
+            <div class="date1">
+                <label for="input-start-date">Start Date</label>
+                <input type="date" id="input-start-date">
+            </div>
+            <div class="date2">
+                <label for="input-end-date">End Date</label>
+                <input type="date" id="input-end-date">
+            </div>
+        </div>
+        <div>
+            <label for="input-description">Description</label>
+            <textarea id="input-description"></textarea>
+        </div>
+        <div class="techno">
+            <label for="techno">Technologies</label>
+            <div class="parent-checkbox">
+                    <div class="checkbox">
+                        <input type="checkbox" id="input-checkbox1" value="Node Json"/>Node Js</input>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="input-checkbox2"  value="React JS"/>Next JS</input>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="input-checkbox3" value="Next JS"/>React JS</input>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="input-checkbox4" value="TypeScript"/>TypeScript</input>
+                    </div>
+                </div> 
+                <div>
+                    <label for="">Upload Image</label>
+                    <input type="file">
+                </div>
+        </div>
+    </form>
+    </div>
+</div>
+</body>
+</html>

@@ -12,12 +12,11 @@
     }
 
     .navbar{
-        width: 100%;
+        width: 96.5vw;
         padding: 25px;
         background-color: #EEEEEE;
         display: flex;
         justify-content: space-between;
-        border: 2px solid black;
 
     }
 

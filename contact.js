@@ -9,7 +9,7 @@ function submitData() {
     return alert("Name must be filled!");
   } else if (email === "") {
     return alert("Email must be filled!");
-  } else if (number === "") { // Mengganti kondisi ini
+  } else if (number === "") {
     return alert("Number must be filled!");
   } else if (subject === "") {
     return alert("Subject must be selected!");
@@ -20,7 +20,7 @@ function submitData() {
   let emailReceiver = "ffznrr@gmail.com";
   let mailtoLink = `mailto:${emailReceiver}?subject=${subject}&body=Halo, nama saya ${name}, ${message}. Tolong kontak saya di nomor ${number} atau email saya di ${email}`;
 
-  // Membuka email client dengan tautan mailto
+  
   window.location.href = mailtoLink;
 
   let messagers = {
@@ -31,6 +31,6 @@ function submitData() {
     message: message,
   };
 
-  // Menampilkan pesan dalam format yang sesuai
-  alert(JSON.stringify(messagers, null, 2));
+
+  console.log(JSON.stringify(messagers, null, 2));
 }
