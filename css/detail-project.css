@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mooli', sans-serif;
+    
+}
+
+body{
+    background-color: #D8D8D8;
+}
+
+.navbar{
+    width: 96.5vw;
+    padding: 25px;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn-navbar {
+    margin: auto 14%;
+}
+
+.btn-navbar button {
+    padding: 20px 25px;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+}
+
+.btn-navbar button:hover {
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+}
+
+.logo-n-link{
+    display: flex;
+    margin: auto 10.5%;
+}
+
+.navbar .logo-n-link img{
+    width: auto;
+    height: 50px;
+    margin: 0 px;
+}
+
+.logo-n-link a {
+    padding: 10px 45px;
+   text-decoration: none;
+   color: #000;
+}
+
+.logo-n-link a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.landing-page {
+    width: 100%;
+    height: 100vw;
+}
+
+ .landing-page .parent-landing-page {
+    margin: 20px 50px;
+}
+
+.child-landing-page {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.child2-landing-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.child2-landing-page-content {
+    width: 30%;
+    padding: 0 20px;
+}
+
+.child2-landing-page-content-parent {
+    width: 100%;
+    height: auto;
+    font-weight: 400;
+}
+
+.child2-calendar {
+    width: 100%;
+}
+
+.child2-calendar p {
+    margin: auto 5px;
+}
+
+.child3-calendar {
+    width: 100%;
+    display: flex;
+    padding: 5px;
+}
+
+.parent-technologies {
+    margin-top: 40px;
+    font-size: 1.2em;
+}
+
+.technologies {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 55%;
+}
+
+.child-technologies {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+}
+
+.child-technologies h3 {
+    margin: auto 10px;
+}
+.child-technologies img {
+    width: auto;
+}
+
+.layer-texting {
+    text-align: justify;
+    margin: 20px 50px;
+}

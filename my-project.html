@@ -19,11 +19,12 @@
     </div>
 </nav>
 <!-- navbar -->
+<!-- Post Form -->
 
 <div class="container">
     <div class="container-dalem">
         <h2>ADD MY PROJECT</h2>
-        <form>
+        <form onsubmit="addData(event)">
         <div>
             <label for="input-project-name">Project Name</label>
             <input type="text" id="input-project-name">
@@ -46,25 +47,64 @@
             <label for="techno">Technologies</label>
             <div class="parent-checkbox">
                     <div class="checkbox">
-                        <input type="checkbox" id="input-checkbox1" value="Node Json"/>Node Js</input>
+                        <input type="checkbox" id="NodeJs"  class="checkboxes"  value="Node Js"/>Node Js</input>
                     </div>
                     <div class="checkbox">
-                        <input type="checkbox" id="input-checkbox2"  value="React JS"/>Next JS</input>
+                        <input type="checkbox" id="ReactJS" class="checkboxes" value="React JS"/>Next JS</input>
                     </div>
                     <div class="checkbox">
-                        <input type="checkbox" id="input-checkbox3" value="Next JS"/>React JS</input>
+                        <input type="checkbox" id="NextJS" class="checkboxes" value="Next JS"/>React JS</input>
                     </div>
                     <div class="checkbox">
-                        <input type="checkbox" id="input-checkbox4" value="TypeScript"/>TypeScript</input>
+                        <input type="checkbox" id="TypeScript" class="checkboxes" value="TypeScript"/>TypeScript</input>
                     </div>
-                </div> 
-                <div>
-                    <label for="">Upload Image</label>
-                    <input type="file">
-                </div>
+            </div>  
+        </div>
+        <div class="parent-input-blog-image">
+            <label>Upload Image</label>
+            <div class="input-blog-image">
+                <label for="input-blog-image">
+                    <p>choose</p>
+                    <img src="./img/attach.png" width="15px" height="auto"/>
+                    <input type="file" id="input-blog-image" hidden />
+                </label>
+            </div>
+        </div>
+        <div class="btn-posting">
+            <button>Submit</button>
         </div>
     </form>
     </div>
 </div>
+
+<hr/>
+<!--Post Form-->
+<div class="my-project">
+    <h2>MY PROJECT</h2>
+    <div class="card-box">
+
+            <div class="card" id="contents">  
+                <img class="project-pict" src="./img/jj.jpg" >
+                <h3><a href="detail-project.html">Dumbways Mobile App</a></h3>
+                <p>durasi: 3 bulan</p>
+
+                <p style="text-align: justify; margin-top: 5px;">App that used for dumbways students, it was deployed and can downloaded on playstore. Happy Download!</p>
+                <div class="framework-logo">
+                    <img src="./img/android.svg" width="15px" height="auto">
+                    <img src="./img/node-js.svg" width="15px" height="auto">
+                    <img src="./img/react.svg" width="15px" height="auto">
+                </div>
+                <div class="btn-card">
+                    <button class="btn-edit">edit</button>
+                    <button class="btn-delete">delete</button>
+                </div> 
+            </div>
+            
+           
+            
+    </div>
+    
+</div>
+<script src="./js/myproject.js"></script>
 </body>
 </html>
