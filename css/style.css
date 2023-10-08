@@ -13,6 +13,7 @@
 
     .navbar{
         width: 96.5vw;
+        height: auto;
         padding: 25px;
         background-color: #EEEEEE;
         display: flex;
@@ -219,4 +220,14 @@
         background-color: #fff;
         color: #000;
         cursor: pointer;
+    }
+
+    @media only screen and (max-width: 900px){
+        .navbar {
+            width: 100%;
+        }
+
+        .logo-n-link {
+            font-size: 75%;
+        }
     }
