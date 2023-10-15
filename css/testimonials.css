@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.navbar{
+    width: 100vw;
+    padding: 25px;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+
+}
+
+.btn-navbar {
+    margin: auto 14%;
+}
+
+.btn-navbar button {
+    padding: 20px 25px;
+    border-radius: 5px;
+    background-color: black;
+    color: #fff;
+}
+
+.btn-navbar button:hover {
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+}
+
+.logo-n-link{
+    display: flex;
+    margin: auto 10.5%;
+}
+
+.navbar .logo-n-link img{
+    width: auto;
+    height: 50px;
+    margin: 0 px;
+}
+
+.logo-n-link a {
+    padding: 10px 45px;
+   text-decoration: none;
+   color: #000;
+}
+
+.logo-n-link a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.container {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.testimonial{
+    width: 25%;
+    margin: 0 15px 30px 15px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 19px rgba(0, 0, 0, 0.2);
+} 
+
+.testimonial img {
+    object-fit: cover;
+}
+
+.quote{
+font-size: 16px;
+font-style: italic;
+line-height: 1.5;
+margin-bottom: 15px;
+}
+
+.author{
+    font-weight: bold;
+    text-align: right;
+}
+
+.profile-testimonial{
+    border: 2px solid orange;
+    width: 100%;
+}
+
+.container-rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rating-btn {
+    margin: 20px;
+    padding: 2px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: orange;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.rating-btn i {
+    color: #fff;
+}
+
+
+

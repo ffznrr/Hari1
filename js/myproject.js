@@ -104,7 +104,6 @@ function addData(event) {
     console.log(dataBlog);
 
     renderBlog();
-    selisih( startdate, enddate);
 }
 
 function renderBlog() {
@@ -115,11 +114,6 @@ function renderBlog() {
         console.log(dataBlog[i]);
 
         document.getElementById("contents").innerHTML += `
-        <div class="card-box" style="border-radius: 10px;
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: repeat(2, auto);
-        border: 2px solid #ccc;">
 
         <div class="card" id="contents">  
             <img class="project-pict" src="${dataBlog[i].images}" >
@@ -140,7 +134,6 @@ function renderBlog() {
         </div>
         
        
-</div>
         `;
     };
 };
